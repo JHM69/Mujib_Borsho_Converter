@@ -8,34 +8,27 @@
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
+    <ImageView
+        android:layout_width="157dp"
+        android:layout_height="95dp"
+        android:src="@mipmap/logo" />
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="59dp"
-        android:layout_marginBottom="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
         android:gravity="center"
-        android:text="MUJIB BORSHO 100 CONVERTER"
+        android:text="MUJIB BORSHO DATE CONVERTER"
         android:textAlignment="gravity"
         android:textSize="21sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="10dp"
         tools:layout_editor_absoluteY="318dp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="59dp"
-        android:gravity="center"
-        android:hint="Enter Month and Day index:"
-        android:text=""
-        android:textAlignment="gravity"
-        android:textSize="18sp"
-        android:textStyle="normal"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="318dp" />
-
 
     <EditText
         android:id="@+id/day"
-        android:layout_width="match_parent"
+        android:layout_width="306dp"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:hint="day"
@@ -45,37 +38,37 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="141dp" />
 
-    <EditText
-        android:id="@+id/month"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:hint="month"
-        android:inputType="number"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="83dp" />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="306dp"
+        android:layout_height="45dp"
+        android:entries="@array/months"
+        android:prompt="@string/month_prompt" />
 
     <Button
         android:id="@+id/res"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_width="368dp"
+        android:layout_height="46dp"
         android:layout_margin="20dp"
+        android:background="#009688"
         android:text="show date in Mujib Year"
+        android:textColor="#FCFDFD"
+        android:textSize="20sp"
         tools:layout_editor_absoluteX="13dp"
         tools:layout_editor_absoluteY="229dp" />
 
     <TextView
         android:id="@+id/result"
-        android:layout_width="match_parent"
-        android:layout_height="59dp"
+        android:layout_width="368dp"
+        android:layout_height="46dp"
+        android:background="#6B8180"
         android:gravity="center"
-        android:hint="result in mujib borsho"
+        android:hint="Result in Mujib Borsho"
         android:text=""
         android:textAlignment="gravity"
-        android:textAllCaps="true"
-        android:textSize="18sp"
+        android:textColor="#F5F3F3"
+        android:textColorHint="#FAF8F8"
+        android:textSize="20sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="10dp"
         tools:layout_editor_absoluteY="318dp" />

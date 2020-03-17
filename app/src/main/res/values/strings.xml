@@ -1,6 +1,24 @@
 <resources>
-    <string name="app_name">mujib borsho</string>
+    <string name="app_name">Mujib Borsho Date Converter</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_dashboard">About</string>
+    <string name="title_notifications"> </string>
+
+
+    <string name="month_prompt">Choose a Month</string>
+
+    <string-array name="months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
 </resources>
